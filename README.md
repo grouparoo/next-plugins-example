@@ -18,4 +18,5 @@ npm run dev
 
 Notes:
 
+- The plugin needs `react` and `react-dom` in its own dependencies.
 - The [webpack test](https://github.com/evantahler/next-plugins/blob/master/main/next.config.js) is specific to a plugin named "plugin". If you have a lot of plugins you may want to build the search programmatically.
