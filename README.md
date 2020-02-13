@@ -11,3 +11,4 @@ An example of how to use a dynamic import to load a page from a random plugin ou
 Notes:
 
 - The plugin needs `react` and `react-dom` in its own dependencies.
+- The webpack test is specific to a plugin named "plugin". If you have a lot of plugins you may want to build the search programmatically.
