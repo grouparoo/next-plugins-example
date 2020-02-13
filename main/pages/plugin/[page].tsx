@@ -1,5 +1,4 @@
 import dynamic from "next/dynamic";
-import { Component } from "react";
 import { useRouter } from "next/router";
 
 export default function PluginContainerPage() {
