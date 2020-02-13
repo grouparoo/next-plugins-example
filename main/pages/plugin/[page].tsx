@@ -12,7 +12,6 @@ export default function PluginContainerPage() {
   const PluginComponent = dynamic(
     () => import(`./../../node_modules/plugin/pages/${router.query.page}`),
     {
-      ssr: false,
       loading: () => <p>Loading...</p>
     }
   );
