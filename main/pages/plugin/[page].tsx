@@ -10,8 +10,7 @@ export default function PluginContainerPage() {
   }
 
   const PluginComponent = dynamic(
-    // () => import(`./../../node_modules/plugin/pages/${router.query.page}`),
-    () => import(`./../../node_modules/plugin/pages/other-page.plugin.jsx`),
+    () => import(`./../../node_modules/plugin/pages/${router.query.page}`),
     {
       ssr: false,
       loading: () => <p>Loading...</p>
@@ -20,45 +19,3 @@ export default function PluginContainerPage() {
 
   return <PluginComponent />;
 }
-
-// interface Props {
-//   query: {
-//     page: string;
-//   };
-// }
-
-// interface State {
-//   PluginComponent: any;
-// }
-
-// export default class Page extends Component<Props, State> {
-//   static getInitialProps({ query }) {
-//     return { query };
-//   }
-
-//   constructor(props) {
-//     super(props);
-//     this.state = {
-//       PluginComponent: null
-//     };
-//   }
-
-//   componentDidMount() {
-//     const { query } = this.props;
-//     this.setState({
-//       PluginComponent: dynamic(
-//         () =>
-//           import(`./../../node_modules/plugin/pages/${query.page}.plugin.jsx`),
-//         {
-//           ssr: false,
-//           loading: () => <p>Loading...</p>
-//         }
-//       )
-//     });
-//   }
-
-//   render() {
-//     const { PluginComponent } = this.state;
-//     return <>{PluginComponent ? <PluginComponent /> : null}</>;
-//   }
-// }

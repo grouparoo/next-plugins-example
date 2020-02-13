@@ -6,6 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "peerDependencies": {
+    "next": "^9.2.1"
+  },
   "author": "",
   "license": "ISC"
 }
