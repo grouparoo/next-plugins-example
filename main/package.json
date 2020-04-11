@@ -8,8 +8,8 @@
   "dependencies": {
     "plugin": "file:../plugin",
     "next": "^9.3.2",
-    "react": "^16.13.0",
-    "react-dom": "^16.13.0"
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   },
   "scripts": {
     "dev": "next",
