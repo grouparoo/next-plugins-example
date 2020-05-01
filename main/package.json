@@ -9,16 +9,20 @@
     "plugin": "file:../plugin",
     "next": "^9.3.2",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "snyk": "^1.316.1"
   },
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "devDependencies": {
     "@types/node": "^13.7.1",
     "@types/react": "^16.9.19",
     "typescript": "^3.7.5"
-  }
+  },
+  "snyk": true
 }
