@@ -1,0 +1,4 @@
+{
+  "packages": ["main", "plugin"],
+  "version": "0.0.0"
+}

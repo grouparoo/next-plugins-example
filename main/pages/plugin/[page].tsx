@@ -9,9 +9,9 @@ export default function PluginContainerPage() {
   }
 
   const PluginComponent = dynamic(
-    () => import(`./../../node_modules/plugin/pages/${router.query.page}`),
+    () => import(`./../../../plugin/pages/${router.query.page}`),
     {
-      loading: () => <p>Loading...</p>
+      loading: () => <p>Loading...</p>,
     }
   );
 
