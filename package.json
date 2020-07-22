@@ -1,13 +1,15 @@
 {
   "name": "next-plugins",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "An example of how to use a dynamic import to load a page from a random plugin outside of the main next \"pages\" directory",
-  "main": "index.js",
+  "private": true,
   "dependencies": {
-    "lerna": "^3.20.2"
+    "lerna": "^3.22.1"
   },
   "scripts": {
-    "test": "cd main && npm run build",
+    "start": "cd server && npm run start",
+    "dev": "cd server && npm run dev",
+    "test": "cd server && npm run build",
     "prepare": "lerna bootstrap --strict"
   },
   "repository": {
@@ -16,8 +18,5 @@
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/evantahler/next-plugins/issues"
-  },
   "homepage": "https://github.com/evantahler/next-plugins#readme"
 }

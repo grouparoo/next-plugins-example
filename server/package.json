@@ -1,12 +1,15 @@
 {
-  "name": "next-plugins",
-  "version": "1.0.0",
+  "name": "next-plugins-server",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "author": "",
   "license": "ISC",
+  "private": true,
   "dependencies": {
-    "plugin": "file:../plugin",
+    "fs-extra": "^9.0.1",
+    "glob": "^7.1.6",
+    "my-nextjs-plugin": "0.0.1",
     "next": "^9.3.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
