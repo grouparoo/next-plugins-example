@@ -26,9 +26,21 @@ module.exports = {
 
     // add a rule to compile our plugins from within the monorepo
     config.module.rules.push({
-      test: /plugins\/.*\/pages\/.*\.ts?|plugins\/.*\/pages\/.*\.tsx?/,
+      test: /plugins\/.*\.ts?|plugins\/.*.tsx?/,
       use: [options.defaultLoaders.babel],
     });
+
+    // we want to ensure that the server project's version of react is used in all cases
+    config.resolve.alias["react"] = path.join(
+      __dirname,
+      "node_modules",
+      "react"
+    );
+    config.resolve.alias["react-dom"] = path.resolve(
+      __dirname,
+      "node_modules",
+      "react-dom"
+    );
 
     return config;
   },
