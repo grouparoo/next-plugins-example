@@ -1,8 +1,8 @@
 version: 1
 update_configs:
   - package_manager: "javascript"
-    directory: "/main"
+    directory: "/server"
     update_schedule: "live"
   - package_manager: "javascript"
-    directory: "/plugin"
+    directory: "/plugins/my-nextjs-plugin"
     update_schedule: "live"
