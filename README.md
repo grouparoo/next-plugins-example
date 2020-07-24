@@ -1,4 +1,4 @@
-# Next Plugins Example
+# Next.js Plugins Example
 
 ![Node.js CI](https://github.com/evantahler/next-plugins/workflows/Node.js%20CI/badge.svg)
 
