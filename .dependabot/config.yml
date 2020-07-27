@@ -3,6 +3,9 @@ update_configs:
   - package_manager: "javascript"
     directory: "/server"
     update_schedule: "live"
+    ignored_updates:
+      - match:
+          dependency_name: "my-nextjs-plugin"
   - package_manager: "javascript"
     directory: "/plugins/my-nextjs-plugin"
     update_schedule: "live"
