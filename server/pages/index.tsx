@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function () {
+export default function IndexPage() {
   return (
     <>
       <h1>Hello from the index</h1>
